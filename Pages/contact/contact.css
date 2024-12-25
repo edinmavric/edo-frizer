@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #5d4037;
+    --secondary-color: #8d6e63;
+    --background-color: #efebe9;
+    --text-color: #3e2723;
+    --accent-color: #d7ccc8;
+}
+
+.bg-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-contact h1 {
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 1px black;
+}
+
+.contact-info p {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.work-hours {
+    margin-top: 40px;
+}
+
+.work-hours h3 {
+    color: black;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.work-hours p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form input {
+    width: 80%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #5c4033;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #4a3328;
+} 
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container-contact h1 {
+        font-size: 2rem;
+    }
+
+    .work-hours {
+        text-align: end;
+    }
+
+    .work-hours h3 {
+        font-size: 1.05rem;
+    }
+
+    .work-hours p {
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        align-items: flex-start;
+    }
+}

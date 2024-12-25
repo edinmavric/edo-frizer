@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #5d4037;
+    --secondary-color: #8d6e63;
+    --background-color: #efebe9;
+    --text-color: #3e2723;
+    --accent-color: #d7ccc8;
+}
+
+body,
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px #00000025;
+    height: 12vh;
+    padding: 0 40px;
+    z-index: 3;
+    position: relative;
+}
+
+header img {
+    height: -webkit-fill-available;
+}
+
+header a {
+    height: -webkit-fill-available;
+}
+
+.bg-image {
+    min-height: 88vh;
+    background-image: url('./images/hair_salon.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000;
+    position: relative;
+}
+
+.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 254, 254, 0.92);
+    z-index: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00000050;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+.book-now {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.language-select {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: large;
+}
+
+.header-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: none !important;
+    }
+
+    .header-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        box-shadow: 1px 2px 5px #00000050;
+        position: relative;
+        z-index: 5;
+    }
+
+    .header-mobile .btn {
+        width: auto;
+        background-color: white;
+        color: #000000;
+        font-size: 2rem;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .nav-links-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:nth-child(1) {
+        font-size: 2rem;
+        gap: 1.5rem;
+    }
+
+    .nav-links-mobile a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .language-select {
+        font-size: 1.5rem;
+    }
+
+    .bg-image {
+        min-height: 93.3vh;
+    }
+}

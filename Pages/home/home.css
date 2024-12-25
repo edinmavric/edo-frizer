@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #5d4037;
+    --secondary-color: #8d6e63;
+    --background-color: #efebe9;
+    --text-color: #3e2723;
+    --accent-color: #d7ccc8;
+}
+
+.bg-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-home {
+    display: flex;
+    padding: 0 2rem;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-left img {
+    width: 320px;
+}
+
+.content-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    -webkit-text-stroke: 1px black;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.info-card {
+    padding: 1.5rem;
+    padding-right: 0;
+    text-align: end;
+}
+
+.info-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    color: rgb(50, 50, 255);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.social-links {
+    text-align: end;
+    color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+}
+
+.barber-icon {
+    font-size: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container-home {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .content-left img {
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    .content-right {
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .info-card {
+        text-align: start;
+        padding: 1.5rem 0;
+    }
+}

@@ -1,0 +1,121 @@
+.bg-image {
+    padding: 3rem 0;
+}
+
+.container-prices {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 3;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #5c4a3d;
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: #5c4a3d;
+}
+
+.title::before {
+    left: 25%;
+}
+
+.title::after {
+    right: 25%;
+}
+
+.diamond-decoration {
+    text-align: center;
+    margin: 1rem 0;
+    color: #5c4a3d;
+    font-size: 1.2rem;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.price-section {
+    padding: 0.5rem;
+}
+
+.price-section h2 {
+    color: #5c4a3d;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #5c4a3d;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.price-item:last-child {
+    margin-bottom: 0;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 3rem auto 0 auto;
+    position: relative;
+    z-index: 3;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .title::before,
+    .title::after {
+        display: none;
+    }
+
+    .bg-image {
+        padding: 1.5rem;
+    }
+}
