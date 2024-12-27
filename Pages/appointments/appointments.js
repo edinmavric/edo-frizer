@@ -97,7 +97,7 @@ const submitAppointment = async (date, time) => {
         if (!response.ok) {
             throw new Error('Failed to submit appointment');
         }
-        alert('Appointment successfully booked!');
+        window.location.href = '/edo-frizer/Pages/validation/appointment/validation.html';
     } catch (error) {
         console.error('Error submitting appointment:', error);
         alert('Failed to book the appointment. Please try again later.');

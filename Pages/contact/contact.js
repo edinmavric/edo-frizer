@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (!hasError) {
-            window.location.href = '../validation/contact/validation.html';
+            window.location.href = '/edo-frizer/Pages/validation/contact/validation.html';
             contactForm.reset();
         }
     });

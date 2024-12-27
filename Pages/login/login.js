@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('userEmail', email);
 
                 alert(`Logged in as: ${email}`);
-                window.location.href = '../home/home.html';
+                window.location.href = '/edo-frizer/Pages/home/home.html';
             } else {
                 alert('Invalid email or password');
             }

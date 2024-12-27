@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
 const bookNowButton = document.querySelector('.book-now');
 if (bookNowButton) {
     bookNowButton.addEventListener('click', () => {
-        window.location.href = '../appointments/appointments.html';
+        window.location.href = '/edo-frizer/Pages/appointments/appointments.html';
     });
 }
