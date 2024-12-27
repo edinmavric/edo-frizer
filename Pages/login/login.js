@@ -84,13 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const user = users.find(user => user.email === email);
             const hashedPassword = hash(password);
 
-            // console.log('Entered Password Hash:', hashedPassword);
-            // console.log(
-            //     'Stored Password Hash:',
-            //     user ? user.password : 'No user found'
-            // );
-
             if (user && user.password === hashedPassword) {
+                localStorage.setItem('isLoggedIn', 'true');
                 localStorage.setItem('userEmail', email);
 
                 alert(`Logged in as: ${email}`);
