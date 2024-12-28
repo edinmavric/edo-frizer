@@ -9,7 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const textContent = element.getAttribute(
                     `data-text-${language}`
                 );
-                if (textContent) element.textContent = textContent;
+
+                if (textContent) {
+                    const dynamicContent = element.querySelector('a');
+                    if (dynamicContent) {
+                        element.innerHTML = `${textContent} <a class="${dynamicContent.className}">${dynamicContent.textContent}</a>`;
+                    } else {
+                        element.textContent = textContent;
+                    }
+                }
 
                 const valueContent = element.getAttribute(
                     `data-value-${language}`
@@ -57,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const bookNowButton = document.querySelector('.book-now');
 if (bookNowButton) {
     bookNowButton.addEventListener('click', () => {
-        window.location.href = '/edo-frizer/Pages/appointments/appointments.html';
+        window.location.href =
+            '/edo-frizer/Pages/appointments/appointments.html';
     });
 }
