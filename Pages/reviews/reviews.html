@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-text-en="Reviews" data-text-sr="Recenzije">Reviews</title>
+        <link
+            rel="icon"
+            href="/edo-frizer/images/edo_frizer_logo-removebg-preview.png"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/edo-frizer/Pages/reviews/reviews.css" />
+        <link rel="stylesheet" href="/edo-frizer/style.css" />
+        <script src="/edo-frizer/script.js" defer></script>
+    </head>
+    <body>
+        <div class="header-mobile">
+            <a href="/edo-frizer/Pages/home/home.html"
+                ><img
+                    src="/edo-frizer/images/edo_frizer_logo-removebg-preview.png"
+                    alt="logo"
+                    width="74px"
+                    height="auto"
+                />
+            </a>
+            <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+            >
+                ☰
+            </button>
+
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+            >
+                <div class="offcanvas-header">
+                    <a href="/edo-frizer/Pages/home/home.html"
+                        ><img
+                            src="/edo-frizer/images/edo_frizer_logo-removebg-preview.png"
+                            alt="logo"
+                            width="74px"
+                            height="auto"
+                        />
+                    </a>
+                    <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-links-mobile">
+                        <a
+                            href="/edo-frizer/Pages/home/home.html"
+                            data-text-en="Home"
+                            data-text-sr="Pocetna"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="/edo-frizer/Pages/prices/prices.html"
+                            data-text-en="Prices"
+                            data-text-sr="Cene"
+                            >Prices</a
+                        >
+                        <a
+                            href="/edo-frizer/Pages/contact/contact.html"
+                            data-text-en="Contact us"
+                            data-text-sr="Kontaktirajte nas"
+                            >Contact us</a
+                        >
+                        <a
+                            href="/edo-frizer/Pages/reviews/reviews.html"
+                            data-text-en="Reviews"
+                            data-text-sr="Ocene"
+                            >Reviews</a
+                        >
+                        <a
+                            href="/edo-frizer/Pages/game/game.html"
+                            data-text-en="Game"
+                            data-text-sr="Igrica"
+                            >Game</a
+                        >
+                    </div>
+                    <div class="nav-links-mobile">
+                        <div>
+                            🌐
+                            <select class="language-select">
+                                <option
+                                    value="sr"
+                                    data-value-en="sr"
+                                    data-value-sr="sr"
+                                >
+                                    sr
+                                </option>
+                                <option
+                                    value="en"
+                                    data-value-en="en"
+                                    data-value-sr="en"
+                                >
+                                    en
+                                </option>
+                            </select>
+                        </div>
+                        <button
+                            class="book-now"
+                            data-text-en="Book now"
+                            data-text-sr="Rezervisite"
+                        >
+                            Book now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="/edo-frizer/Pages/home/home.html"
+                ><img
+                    src="/edo-frizer/images/edo_frizer_logo-removebg-preview.png"
+                    alt="logo"
+            /></a>
+            <div class="nav-links">
+                <a
+                    href="/edo-frizer/Pages/home/home.html"
+                    data-text-sr="Pocetna"
+                    data-text-en="Home"
+                    >Home</a
+                >
+                <a
+                    href="/edo-frizer/Pages/prices/prices.html"
+                    data-text-sr="Cene"
+                    data-text-en="Prices"
+                    >Prices</a
+                >
+                <a
+                    href="/edo-frizer/Pages/contact/contact.html"
+                    data-text-sr="Kontaktirajte nas"
+                    data-text-en="Contact us"
+                    >Contact us</a
+                >
+                <a
+                    href="/edo-frizer/Pages/reviews/reviews.html"
+                    data-text-en="Reviews"
+                    data-text-sr="Ocene"
+                    class="active"
+                    >Reviews</a
+                >
+                <a
+                    href="/edo-frizer/Pages/game/game.html"
+                    data-text-sr="Igrica"
+                    data-text-en="Game"
+                    >Game</a
+                >
+            </div>
+            <div class="nav-links">
+                <div>
+                    🌐
+                    <select class="language-select">
+                        <option value="en">en</option>
+                        <option value="sr">sr</option>
+                    </select>
+                </div>
+                <a href="/edo-frizer/Pages/appointments/appointments.html">
+                    <button
+                        class="book-now"
+                        data-text-sr="Rezervisite"
+                        data-text-en="Book now"
+                    >
+                        Book now
+                    </button>
+                </a>
+            </div>
+        </header>
+        <div class="bg-image">
+            <div class="container-reviews">
+                <div class="container">
+                    <h1
+                        data-text-en="Client Testimonials"
+                        data-text-sr="Ocene Klijenata"
+                    >
+                        Client Testimonials
+                    </h1>
+
+                    <div class="testimonials-grid">
+                        <div class="testimonial">
+                            <div class="client-info">
+                                <h2>Joe B.</h2>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                            <p
+                                data-text-en="I went in for the first time today and got my haircut. They did an amazing job, was very friendly, talkative and very professional. They gave me some recommendations about my hair; ways that I could take better care of it so it can be healthier in the future. Well worth the price and time. Thank you Northbrook Barber shop for a great haircut and experience!"
+                                data-text-sr="Prvi put sam danas bio na šišanju. Odlično su obavili posao, bili su veoma ljubazni, pričljivi i profesionalni. Dali su mi preporuke za negu kose, kako bih je bolje održavao u budućnosti. Vredelo je vremena i novca. Hvala Northbrook Barber Shop-u za sjajno šišanje i iskustvo!"
+                            >
+                                "I went in for the first time today and got my
+                                haircut. They did an amazing job, was very
+                                friendly, talkative and very professional. They
+                                gave me some recommendations about my hair; ways
+                                that I could take better care of it so it can be
+                                healthier in the future. Well worth the price
+                                and time. Thank you Northbrook Barber shop for a
+                                great haircut and experience!"
+                            </p>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="client-info">
+                                <h2>Todd K.</h2>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                            <p
+                                data-text-en="Highly recommended! The place is very clean and modern. Been receiving haircuts here for over a year. They take their time, is detailed and professional. Give them a try! You won't be disappointed."
+                                data-text-sr="Topla preporuka! Mesto je veoma čisto i moderno. Već više od godinu dana se šišam ovde. Izdvoje vreme, detaljni su i profesionalni. Pokušajte! Nećete biti razočarani."
+                            >
+                                "Highly recommended! The place is very clean and
+                                modern. Been receiving haircuts here for over a
+                                year. They take their time, is detailed and
+                                professional. Give them a try! You won't be
+                                disappointed."
+                            </p>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="client-info">
+                                <h2>Russel K.</h2>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                            <p
+                                data-text-en="Very clean. Very friendly. They took their time and did a great job."
+                                data-text-sr="Veoma čisto. Veoma ljubazno. Posvetili su vreme i odradili sjajan posao."
+                            >
+                                "Very clean. Very friendly. They took their time
+                                and did a great job."
+                            </p>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="client-info">
+                                <h2>Ursula W.</h2>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                            <p
+                                data-text-en="Wanted to try a new place for my 4 boys. Someone suggested Northbrook Barber Shop, so I gave it try! I couldn't be happier with my boys' cuts! They did exactly what I wanted from what I described, plus super sweet! High recommend!"
+                                data-text-sr="Želela sam da isprobam novo mesto za svoja 4 sina. Neko je predložio Northbrook Barber Shop, pa sam pokušala! Ne mogu biti srećnija sa njihovim frizurama! Uradili su tačno ono što sam opisala, uz to su bili veoma ljubazni! Topla preporuka!"
+                            >
+                                "Wanted to try a new place for my 4 boys.
+                                Someone suggested Northbrook Barber Shop, so I
+                                gave it try! I couldn't be happier with my boys'
+                                cuts! They did exactly what I wanted from what I
+                                described, plus super sweet! High recommend!"
+                            </p>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="client-info">
+                                <h2>Michael S.</h2>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                            <p
+                                data-text-en="The Barber Shop is phenomenal. I have been coming to this barbershop for over 15 years and received an excellent hair cut every time. I won't get a haircut anywhere else now except here. It is also good to support your local small businesses. Thank you for making a wonderful hair cut experience well worth the price."
+                                data-text-sr="Ova berbernica je fenomenalna. Već više od 15 godina dolazim ovde i svaki put dobijem odličnu frizuru. Sada se ne šišam nigde drugde osim ovde. Takođe je dobro podržati lokalne male preduzetnike. Hvala vam na divnom iskustvu koje vredi svake pare."
+                            >
+                                "The Barber Shop is phenomenal. I have been
+                                coming to this barbershop for over 15 years and
+                                received an excellent hair cut every time. I
+                                won't get a haircut anywhere else now except
+                                here. It is also good to support your local
+                                small businesses. Thank you for making a
+                                wonderful hair cut experience well worth the
+                                price."
+                            </p>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="client-info">
+                                <h2>Curtis B.</h2>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                            <p
+                                data-text-en="This place has been here for a while but I am not going to take that into consideration. What's important about this place is that they will make you look as dashing as Don Draper or as gorgeous as the great Angelina. They are some personable and nice people who charge very competitively."
+                                data-text-sr="Ovo mesto postoji već neko vreme, ali to neću uzimati u obzir. Važno je da vas ovde učine privlačnim kao Don Drejper ili prelepim kao velika Anđelina. Oni su ljubazni ljudi sa pristupačnim cenama."
+                            >
+                                "This place has been here for a while but I am
+                                not going to take that into consideration.
+                                What's important about this place is that they
+                                will make you look as dashing as Don Draper or
+                                as gorgeous as the great Angelina. They are some
+                                personable and nice people who charge very
+                                competitively."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry-text">
+                    <div>
+                        <span
+                            data-text-sr="Edo Frizer Barber Shop posvećen je pružanju kvalitetnih
+                     usluga za muškarce. Trudimo se da svakom klijentu obezbedimo 
+                     nezaboravno iskustvo. Imate pitanje ili nedoumicu? 
+                     Slobodno nas "
+                            data-text-en="Edo Frizer Barber Shop is dedicated to providing quality
+                    men’s services. We do our best to ensure each client has an
+                    unforgettable experience. Have a question or concern? Please
+                    don’t hesitate to "
+                        >
+                            Edo Frizer Barber Shop is dedicated to providing
+                            quality men’s services. We do our best to ensure
+                            each client has an unforgettable experience. Have a
+                            question or concern? Please don’t hesitate to
+                        </span>
+                        <a
+                            href="/edo-frizer/Pages/contact/contact.html"
+                            data-text-en="contact us"
+                            data-text-sr="kontaktirajte"
+                            >contact us</a
+                        >
+                        <span>!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
