@@ -82,6 +82,7 @@ a {
     text-decoration: none;
     color: #00000050;
     font-weight: 500;
+    font-size: 1.25rem;
 }
 
 .nav-links a:hover {
@@ -106,7 +107,7 @@ a {
     border: none;
     background: transparent;
     cursor: pointer;
-    font-size: large;
+    font-size: 1.25rem;
 }
 
 .header-mobile {

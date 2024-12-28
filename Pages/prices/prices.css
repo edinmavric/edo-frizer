@@ -15,7 +15,7 @@
 
 .title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
     color: #5c4a3d;
     position: relative;
@@ -43,7 +43,7 @@
     text-align: center;
     margin: 1rem 0;
     color: #5c4a3d;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .price-grid {
@@ -54,12 +54,12 @@
 }
 
 .price-section {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .price-section h2 {
     color: #5c4a3d;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #5c4a3d;
@@ -69,8 +69,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.8rem;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 500;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted #000;
+    margin: 0 5px;
+    margin-bottom: 7px;
 }
 
 .price-item:last-child {
@@ -117,5 +124,13 @@
 
     .bg-image {
         padding: 1.5rem;
+    }
+
+    .price-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .price-item {
+        font-size: 1.2rem;
     }
 }

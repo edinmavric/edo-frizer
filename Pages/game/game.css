@@ -61,6 +61,11 @@
     border-right: 1px solid #171b26;
 }
 
+.score,
+.high-score {
+    color: #b8c6dc;
+}
+
 @media screen and (max-width: 768px) {
     .wrapper {
         width: 90vmin;
