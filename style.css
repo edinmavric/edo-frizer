@@ -74,6 +74,10 @@ header a {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav-links a {
     text-decoration: none;
     color: #00000050;
