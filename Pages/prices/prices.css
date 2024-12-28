@@ -54,12 +54,12 @@
 }
 
 .price-section {
-    padding: 1rem;
+    padding: 0.375rem;
 }
 
 .price-section h2 {
     color: #5c4a3d;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #5c4a3d;
@@ -91,7 +91,7 @@
     margin: 3rem auto 0 auto;
     position: relative;
     z-index: 3;
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 1rem;
 }
 
