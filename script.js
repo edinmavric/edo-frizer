@@ -9,15 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const textContent = element.getAttribute(
                     `data-text-${language}`
                 );
-
-                if (textContent) {
-                    const dynamicContent = element.querySelector('a');
-                    if (dynamicContent) {
-                        element.innerHTML = `${textContent} <a class="${dynamicContent.className}">${dynamicContent.textContent}</a>`;
-                    } else {
-                        element.textContent = textContent;
-                    }
-                }
+                if (textContent) element.textContent = textContent;
 
                 const valueContent = element.getAttribute(
                     `data-value-${language}`
