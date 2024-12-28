@@ -16,6 +16,11 @@ let score = 0;
 let highScore = localStorage.getItem('high-score') || 0;
 highScoreElement.innerText = `${highScore}`;
 
+const updateScores = () => {
+    if (scoreElement) scoreElement.textContent = score;
+    if (highScoreElement) highScoreElement.textContent = highScore;
+};
+
 const updateFoodPosition = () => {
     foodX = Math.floor(Math.random() * 30) + 1;
     foodY = Math.floor(Math.random() * 30) + 1;
@@ -59,8 +64,8 @@ const initGame = () => {
         score++;
         highScore = score >= highScore ? score : highScore;
         localStorage.setItem('high-score', highScore);
-        scoreElement.innerText = `${score}`;
-        highScoreElement.innerText = `${highScore}`;
+
+        updateScores();
     }
     snakeX += velocityX;
     snakeY += velocityY;
