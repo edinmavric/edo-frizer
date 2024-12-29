@@ -132,6 +132,7 @@ h1 {
 
     .content-right {
         gap: 0;
+        max-width: none;
     }
 
     h1 {
