@@ -78,6 +78,7 @@
 
 .btn:hover {
     background-color: var(--accent-color);
+    color: black;
 }
 
 form {

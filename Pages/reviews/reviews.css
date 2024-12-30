@@ -12,7 +12,7 @@
     margin: 0 auto;
 }
 
-.entry-text {
+.footer-text {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -22,20 +22,25 @@
     margin-top: 2rem;
 }
 
-.entry-text div {
+.footer-text div {
     width: 60%;
 }
 
-.entry-text span {
+.footer-text span {
     font-size: 1.7rem;
     color: var(--text-color);
     margin: 0;
 }
 
-.entry-text a {
+.footer-text a {
     font-size: 1.7rem;
     color: rgb(50, 50, 255);
     margin: 0;
+    transition: 300ms;
+}
+
+.footer-text a:hover {
+    color: var(--accent-color);
 }
 
 .container {
@@ -124,12 +129,12 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .entry-text div {
+    .footer-text div {
         width: 90%;
     }
 
-    .entry-text span,
-    .entry-text a {
+    .footer-text span,
+    .footer-text a {
         font-size: 1.5rem;
     }
 }

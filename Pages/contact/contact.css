@@ -87,19 +87,20 @@
 }
 
 .contact-form button {
-    background-color: #5c4033;
+    background-color: var(--primary-color);
     color: white;
     padding: 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.1rem;
-    transition: background-color 0.3s;
     width: 100%;
+    transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #4a3328;
+    background-color: var(--accent-color);
+    color: black;
 }
 
 @media (max-width: 768px) {

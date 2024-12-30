@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     emailInput.insertAdjacentElement('afterend', emailError);
     messageInput.insertAdjacentElement('afterend', messageError);
 
-    const fullNameRegex = /^[A-Z][a-z]+(\s[A-Z][a-z]+)*$/;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const fullNameRegex = /^[A-Z][a-z]+(\s[A-Z][a-z]+)+$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     const userEmail = localStorage.getItem('userEmail');
 
@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (!hasError) {
-            window.location.href = '/edo-frizer/Pages/validation/contact/validation.html';
+            window.location.href =
+                '/edo-frizer/Pages/validation/contact/validation.html';
             contactForm.reset();
         }
     });
