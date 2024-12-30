@@ -78,7 +78,6 @@
 
 .btn:hover {
     background-color: var(--accent-color);
-    color: black;
 }
 
 form {
@@ -111,13 +110,66 @@ input[type='date']:focus {
     border-bottom-color: #3b82f6;
 }
 
+#booked-times-section {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    bottom: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 0.5rem #888;
+    max-width: min-content;
+    min-width: 395.71px;
+}
+
+#booked-times-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+#booked-times-section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#booked-times-section ul li {
+    width: max-content;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 90.28px;
+    transition: 300ms;
+}
+
+#booked-times-section ul li:hover {
+    scale: 1.05;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: default;
+}
+
+@media (max-width: 1270px) {
+    #booked-times-section {
+        position: static;
+    }
+
+    .container-appointments {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 768px) {
     .booking-card img {
         order: 5;
         margin-top: 30px;
-    }
-
-    body {
-        overflow-x: hidden;
     }
 }
