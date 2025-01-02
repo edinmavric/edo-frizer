@@ -94,7 +94,7 @@ a {
     color: var(--primary-color);
 }
 
-.book-now {
+button[data-text-en='Log out'] {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -105,7 +105,7 @@ a {
     transition: background-color 300ms;
 }
 
-.book-now:hover {
+button[data-text-en='Log out']:hover {
     background-color: var(--accent-color);
     color: black;
 }
