@@ -54,18 +54,20 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeLanguageSwitcher();
 });
 
-const logoutButton = document.querySelector(
+const logoutButtons = document.querySelectorAll(
     'button[data-text-en="Log out"], button[data-text-sr="Odjavi se"]'
 );
 
-if (logoutButton) {
-    logoutButton.addEventListener('click', () => {
-        const confirmation = confirm('Are you sure you want to log out?');
-        if (confirmation) {
-            localStorage.removeItem('isLoggedIn');
-            localStorage.removeItem('userEmail');
-            alert('You have been logged out successfully.');
-            window.location.href = '/edo-frizer/Pages/login/login.html';
-        }
+if (logoutButtons.length > 0) {
+    logoutButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const confirmation = confirm('Are you sure you want to log out?');
+            if (confirmation) {
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userEmail');
+                alert('You have been logged out successfully.');
+                window.location.href = '/edo-frizer/Pages/login/login.html';
+            }
+        });
     });
 }
