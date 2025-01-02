@@ -63,7 +63,7 @@
                         <a
                             href="/edo-frizer/Pages/home/home.html"
                             data-text-en="Home"
-                            data-text-sr="Pocetna"
+                            data-text-sr="Početna"
                         >
                             Home
                         </a>
@@ -78,8 +78,7 @@
                             data-text-en="Contact us"
                             data-text-sr="Kontaktirajte nas"
                             >Contact us</a
-                        >
-                        <a
+                        ><a
                             href="/edo-frizer/Pages/reviews/reviews.html"
                             data-text-en="Reviews"
                             data-text-sr="Ocene"
@@ -91,6 +90,13 @@
                             data-text-sr="Igrica"
                             >Game</a
                         >
+                        <a
+                            data-text-sr="Rezerviši"
+                            data-text-en="Book now"
+                            href="/edo-frizer/Pages/appointments/appointments.html"
+                        >
+                            Book now
+                        </a>
                     </div>
                     <div class="nav-links-mobile">
                         <div>
@@ -112,73 +118,83 @@
                                 </option>
                             </select>
                         </div>
-                        <button
-                            class="book-now"
-                            data-text-en="Book now"
-                            data-text-sr="Rezervisite"
-                        >
-                            Book now
+                        <button data-text-en="Log out" data-text-sr="Odjavi se">
+                            Log out
                         </button>
                     </div>
                 </div>
             </div>
         </div>
         <header>
-            <a href="/edo-frizer/Pages/home/home.html"
-                ><img
+            <a href="/edo-frizer/Pages/home/home.html">
+                <img
                     src="/edo-frizer/images/edo_frizer_logo-removebg-preview.png"
                     alt="logo"
-            /></a>
+                />
+            </a>
             <div class="nav-links">
                 <a
                     href="/edo-frizer/Pages/home/home.html"
-                    data-text-sr="Pocetna"
                     data-text-en="Home"
+                    data-text-sr="Početna"
                     >Home</a
                 >
                 <a
                     href="/edo-frizer/Pages/prices/prices.html"
-                    data-text-sr="Cene"
                     data-text-en="Prices"
+                    data-text-sr="Cene"
                     >Prices</a
                 >
                 <a
                     href="/edo-frizer/Pages/contact/contact.html"
-                    data-text-sr="Kontaktirajte nas"
                     data-text-en="Contact us"
+                    data-text-sr="Kontaktirajte nas"
                     >Contact us</a
                 >
                 <a
                     href="/edo-frizer/Pages/reviews/reviews.html"
+                    class="active"
                     data-text-en="Reviews"
                     data-text-sr="Ocene"
-                    class="active"
                     >Reviews</a
                 >
                 <a
                     href="/edo-frizer/Pages/game/game.html"
-                    data-text-sr="Igrica"
                     data-text-en="Game"
+                    data-text-sr="Igrica"
                     >Game</a
                 >
+                <a
+                    data-text-sr="Rezerviši"
+                    data-text-en="Book now"
+                    href="/edo-frizer/Pages/appointments/appointments.html"
+                >
+                    Book now
+                </a>
             </div>
             <div class="nav-links">
                 <div>
                     🌐
                     <select class="language-select">
-                        <option value="en">en</option>
-                        <option value="sr">sr</option>
+                        <option
+                            value="sr"
+                            data-value-en="sr"
+                            data-value-sr="sr"
+                        >
+                            sr
+                        </option>
+                        <option
+                            value="en"
+                            data-value-en="en"
+                            data-value-sr="en"
+                        >
+                            en
+                        </option>
                     </select>
-                </div>
-                <a href="/edo-frizer/Pages/appointments/appointments.html">
-                    <button
-                        class="book-now"
-                        data-text-sr="Rezervisite"
-                        data-text-en="Book now"
-                    >
-                        Book now
+                    <button data-value-en="Log out" data-value-sr="Odjavi se">
+                        Log out
                     </button>
-                </a>
+                </div>
             </div>
         </header>
         <div class="bg-image">

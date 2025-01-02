@@ -54,10 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeLanguageSwitcher();
 });
 
-const bookNowButton = document.querySelector('.book-now');
-if (bookNowButton) {
-    bookNowButton.addEventListener('click', () => {
-        window.location.href =
-            '/edo-frizer/Pages/appointments/appointments.html';
+const logoutButton = document.querySelector(
+    'button[data-text-en="Log out"], button[data-text-sr="Odjavi se"]'
+);
+
+if (logoutButton) {
+    logoutButton.addEventListener('click', () => {
+        const confirmation = confirm('Are you sure you want to log out?');
+        if (confirmation) {
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('userEmail');
+            alert('You have been logged out successfully.');
+            window.location.href = '/edo-frizer/Pages/login/login.html';
+        }
     });
 }
