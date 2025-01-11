@@ -121,6 +121,12 @@ input[type='date']:focus {
     box-shadow: 0 0 0.5rem #888;
     max-width: min-content;
     min-width: 395.71px;
+    transition: 300ms;
+}
+
+#booked-times-section:hover {
+    cursor: default;
+    scale: 1.1;
 }
 
 #booked-times-section h2 {
@@ -151,8 +157,7 @@ input[type='date']:focus {
 }
 
 #booked-times-section ul li:hover {
-    scale: 1.05;
-    background-color: var(--secondary-color);
+    scale: 1.1;
     color: var(--primary-color);
     cursor: default;
 }
