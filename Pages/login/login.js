@@ -74,6 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+alert('Email: user@example.com, Password: useruser123');
+console.log('Email: user@example.com, Password: useruser123');
+
 //useruser123
 //admin123
 //edinedin123
